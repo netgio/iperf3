@@ -21,3 +21,6 @@ EXPOSE 5201
 # very similar to a binary you would run. For example, in the following
 # docker run -it <IMAGE> --help' is like running 'iperf3 --help'
 ENTRYPOINT ["iperf3"]
+
+# iperf -s = run in Server mode
+CMD ["-s"]
